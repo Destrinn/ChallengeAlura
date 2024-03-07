@@ -1,0 +1,92 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+html, main, header {
+    background-color: #e5e5e5
+}
+
+.logo {
+    display: inline;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-area {
+    background-color: #e5e5e5;
+    margin-top: 90px; 
+    margin-bottom: 500px;
+    padding-left: 50px;
+    border-color: #e5e5e5;
+    text-transform: lowercase;
+}
+
+.output-section {
+    background-color: white;
+    display: flex;
+    width: 350px;
+    height: 850px;
+    border-radius: 24px;
+    box-shadow:  -1px 1px 19px rgb(54, 54, 54);
+    text-align: center;
+}
+
+.aviso-notFound {
+    font-weight: 700;
+    font-size: 24px;
+}
+.output-area {
+    display: flex;
+    margin-top: 140px;
+    background-image: url(./imagens/person_logo.jpg);
+    background-repeat: no-repeat;
+    border: none;
+    margin-left: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content:left;
+    margin-top: 20px;
+}
+
+.btn-encrypt {
+    margin-right: 50px;
+    border-radius: 24px;
+    padding: 20px 100px;
+    background-color: #0A3871;
+    color: white;
+    border: #0A3871;
+    box-shadow:  -1px 1px 4px rgb(54, 54, 54);
+}
+
+.btn-decrypt {
+    margin-right: 50px;
+    border-radius: 24px;
+    padding: 20px 80px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    box-shadow:  -1px 1px 4px rgb(54, 54, 54);
+    border: #0A3871;
+
+}
+
+.btn-copy {
+    border-radius: 24px;
+    padding: 20px 100px;
+    background-color: white;
+    color: #0A3871;
+    box-shadow:  -1px 1px 4px rgb(54, 54, 54);
+
+}
+
+.text-notFound {
+    font-size: 18px;
+    margin-bottom: 120px;
+}

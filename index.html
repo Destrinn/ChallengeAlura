@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de pag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagens/Logo_Alura.png" alt="Logo da alura">
+    </header>
+    <main>
+        <section class="input-section">
+            <textarea class="text-area" cols="42" rows="3" placeholder="Digite o texto aqui"></textarea>
+            <div>
+                <img src="./imagens/bi_exclamation-circle-fill.png" alt="Sinal de exclamação">
+                Texto em miniscúlo e sem acento!
+            </div>
+            <div class="buttons">
+                <button class="btn-encrypt" onclick="btnEncrypt()">Encriptar</button>
+                <button class="btn-decrypt" onclick="btnDecrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="output-section">
+            <div>
+                <textarea class="output-area" cols="28" rows="13"></textarea>
+                <h1 class="aviso-notFound">Nenhuma mensagem encontrada</h1>
+                <p class="text-notFound">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="btn-copy">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"> console.log(message)</script>
+</body>
+</html>
