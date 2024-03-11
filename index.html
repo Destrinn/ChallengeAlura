@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Teste de pag</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,25 +16,25 @@
     </header>
     <main>
         <section class="input-section">
-            <textarea class="text-area" cols="42" rows="3" placeholder="Digite o texto aqui"></textarea>
-            <div>
+            <textarea class="text-area" cols="42" rows="10" placeholder="Digite o texto aqui"></textarea>
+            <div >
                 <img src="./imagens/bi_exclamation-circle-fill.png" alt="Sinal de exclamação">
-                Texto em miniscúlo e sem acento!
+                Texto em letras miniscúlas e sem acento!
             </div>
             <div class="buttons">
-                <button class="btn-encrypt" onclick="btnEncrypt()">Encriptar</button>
-                <button class="btn-decrypt" onclick="btnDecrypt()">Desencriptar</button>
+                <button class="btn-encrypt" onclick="btnEncrypt()">Criptografar</button>
+                <button class="btn-decrypt" onclick="btnDecrypt()">Desencriptografar</button>
             </div>
         </section>
         <section class="output-section">
             <div>
-                <textarea class="output-area" cols="28" rows="13"></textarea>
-                <h1 class="aviso-notFound">Nenhuma mensagem encontrada</h1>
-                <p class="text-notFound">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                <button class="btn-copy">Copiar</button>
+                <textarea id="output-area" class="output-area" cols="15" rows="10" disabled></textarea>
+                <h1 id="aviso-notFound" class="aviso-notFound">Nenhuma mensagem encontrada</h1>
+                <p id="text-notFound" class="text-notFound">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button id="btn-copy" class="btn-copy">Copiar</button>
             </div>
         </section>
     </main>
-    <script src="script.js"> console.log(message)</script>
+    <script src="script.js"></script>
 </body>
 </html>
