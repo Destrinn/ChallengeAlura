@@ -49,6 +49,12 @@ function removeTextWhenBtnClicked() {
   p.textContent = "";
 }
 
+function changeTextareaDisplay () {
+  const textArea = document.getElementById("text-area")
+  console.log(textArea.style.display)
+  textArea.style.display = "flex"
+} 
+
 // Refazer o botão do zero
 // function showBtnWhenClicked() {
 //   if (window.matchMedia("(min-width: 768px)").matches) {
@@ -58,6 +64,7 @@ function removeTextWhenBtnClicked() {
 // }
 
 function btnEncrypt() {
+  changeTextareaDisplay();
   removeImageWhenBtnClicked();
   removeTextWhenBtnClicked();
   const textoEncripitado = encryptButtonClicked(textArea.value);

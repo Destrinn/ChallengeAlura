@@ -8,9 +8,6 @@ html, main, header {
     background-color: #e5e5e5
 }
 
-div {
-    font-size: 18px;
-}
 
 .logo {
     display: inline;
@@ -60,6 +57,10 @@ main {
     background-repeat: no-repeat;
     border: none;
     margin-left: 20px;
+}
+
+.button-div {
+    font-size: 18px;
 }
 
 
@@ -132,8 +133,8 @@ main {
         background-image: none;
         width: 500px;
         height: 60px;
-        z-index: 1;
         font-size: 24px;
+        display: none;
     }
 
     .output-section {
@@ -146,13 +147,6 @@ main {
         margin-bottom: 30px;
         border: none;
         display: block;
-    }
-
-    .output-div {
-        position: absolute;
-        top: 57em;
-        left: 20rem;
-        padding-bottom: 15px;
     }
 
     .buttons{
@@ -168,13 +162,11 @@ main {
         font-size: 24px;
         font-weight: 700;
         line-height: 28.8px;
-        z-index: 2;
+
     }
 
     .text-notFound {
         font-size: 16px;
-        z-index: 2;
+  
     }
-
-
 }
