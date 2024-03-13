@@ -120,7 +120,7 @@ main {
     margin-bottom: 100px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     * {
         font-size: 12px;
     }
@@ -196,4 +196,26 @@ main {
         z-index: 0;
     }
 
+} */
+
+@media (max-width: 375px) {
+   .logo {
+    width: 20%;
+    margin-left: -30px;
+   }
+
+   main {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .text-area {
+    font-size: 25px;
+    padding: 0;
+    margin: 40px 10px;
+    width: 240px;
+    height: 100px;
+   }
+
+   
 }
