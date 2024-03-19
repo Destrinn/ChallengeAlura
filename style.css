@@ -14,7 +14,7 @@ html, main, header {
     padding-top: 15px;
     padding-left: 15px;
 }
-
+/* verificar a inicial com uppercase */
 main {
     display: flex;
     justify-content: space-evenly;
@@ -36,6 +36,8 @@ main {
 
 .output-section {
     background-color: white;
+    margin-right: 20px;
+    margin-bottom: 20px;
     width: 450px;
     height: 1000px;
     border-radius: 24px;
@@ -51,7 +53,7 @@ main {
 .output-area {
     display: flex;
     height: 650px;
-    width: 420px;
+    width: 360px;
     margin-top: 140px;
     background-color: white;
     background-image: url(./imagens/person_logo.jpg);
@@ -95,25 +97,25 @@ main {
     box-shadow:  -1px 1px 4px rgb(54, 54, 54);
     font-size: 20px;
 }
+
+.btn-copy {
+   display: none;
+   position: relative;
+   top: 200px;
+   border-radius: 24px;
+   padding: 25px 100px;
+   background-color: white;
+   color: #0A3871;
+   border: #0A3871 solid 1px;
+   box-shadow:  -1px 1px 4px rgb(54, 54, 54);
+   font-size: 20px;
+   
+}
 .default-message {
     position: relative;
     bottom: 240px;
     z-index: 0;
 }
-
-/* .btn-copy {
-    margin-top: 200px;
-    margin-left: 70px;
-    display: none;
-    border-radius: 24px;
-    border: #0A3871 solid 1px;
-    padding: 20px 120px;
-    background-color: white;
-    color: #0A3871;
-    box-shadow:  -1px 1px 4px rgb(54, 54, 54);
-    font-size: 24px;
-
-} */
 
 .text-notFound {
     font-size: 24px;
@@ -154,15 +156,15 @@ main {
         margin-top: 15px;
         margin-left: 35px;
         background-image: none;
-        width: 450px;
-        height: 110px;
+        width: 480px;
+        height: 85px;
         font-size: 24px;
     }
 
     .output-section {
         background-color: white;
         width: 570px;
-        height: 133px;
+        height: 160px;
         justify-content: center;
         margin-top: 40px;
         margin-left: 10px;
@@ -196,6 +198,15 @@ main {
         padding: 0;
     }
 
+    .btn-copy {
+        width: 140px;
+        height: 33px;
+        font-size: 16px;
+        margin-right: 0px;
+        padding: 0;
+        top: -10px;
+    }
+
     .aviso-notFound {
         font-size: 24px;
         font-weight: 700;
@@ -209,7 +220,7 @@ main {
 
     .default-message {
         position: relative;
-        bottom: 120px;
+        bottom: 80px;
         z-index: 0;
     }
 

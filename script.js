@@ -49,17 +49,14 @@ function removeTextWhenBtnClicked() {
   p.textContent = "";
 }
 
+function showBtnWhenClicked() {
+  const btnCopy = document.getElementById("btn-copy")
+  btnCopy.style.display = "inline"
+}
 
-// Refazer o botão do zero
-// function showBtnWhenClicked() {
-//   if (window.matchMedia("(min-width: 768px)").matches) {
-//     const button = document.getElementById("btn-copy");
-//     button.style.display = "inline";
-//   }
-// }
 
 function btnEncrypt() {
-
+  showBtnWhenClicked()
   removeImageWhenBtnClicked();
   removeTextWhenBtnClicked();
   const textoEncripitado = encryptButtonClicked(textArea.value);
@@ -72,3 +69,16 @@ function btnDecrypt() {
   message.value = textoEncriptado;
   textArea.value = "";
 }
+
+// document.getElementById("output-section").addEventListener("click", function() {
+//   console.log('ok');
+// })
+
+async function btnCopy() {
+  const text = document.getElementById('output-area')
+  try {
+    navigator.clipboard.writeText(text.value)
+  } catch (error) {
+    console.log(error.message)
+  }
+}  
