@@ -11,6 +11,12 @@ const decryptionMap = Object.entries(encryptionMap).map(([key, value]) => [
   key,
 ]);
 
+const textArea = document.querySelector(".text-area");
+const message = document.querySelector(".output-area");
+const text = document.querySelector(".text-notFound");
+
+////
+
 function encryptButtonClicked(rawText) {
   const validateText = inputValidation(rawText);
   return validateText.split("").map(encryptTextArray).join("");
@@ -32,10 +38,36 @@ const inputValidation = (input) => {
   return input.toLowerCase();
 };
 
+////
 
-const textArea = document.querySelector(".text-area");
-const message = document.querySelector(".output-area");
-const text = document.querySelector(".text-notFound")
+function btnEncrypt() {
+  showBtnWhenClicked();
+  removeImageWhenBtnClicked();
+  removeTextWhenBtnClicked();
+  const textoEncripitado = encryptButtonClicked(textArea.value);
+  message.value = textoEncripitado;
+  textArea.value = "";
+}
+
+function btnDecrypt() {
+  showBtnWhenClicked();
+  removeImageWhenBtnClicked();
+  removeTextWhenBtnClicked();
+  const textoEncriptado = decryptButtonClicked(textArea.value);
+  message.value = textoEncriptado;
+  textArea.value = "";
+}
+
+async function btnCopy() {
+  const text = document.getElementById("output-area");
+  try {
+    navigator.clipboard.writeText(text.value);
+  } catch (error) {
+    console.log(error.message);
+  }
+}
+
+////
 
 function removeImageWhenBtnClicked() {
   const element = document.getElementById("output-area");
@@ -50,35 +82,6 @@ function removeTextWhenBtnClicked() {
 }
 
 function showBtnWhenClicked() {
-  const btnCopy = document.getElementById("btn-copy")
-  btnCopy.style.display = "inline"
+  const btnCopy = document.getElementById("btn-copy");
+  btnCopy.style.display = "inline";
 }
-
-
-function btnEncrypt() {
-  showBtnWhenClicked()
-  removeImageWhenBtnClicked();
-  removeTextWhenBtnClicked();
-  const textoEncripitado = encryptButtonClicked(textArea.value);
-  message.value = textoEncripitado;
-  textArea.value = "";
-}
-
-function btnDecrypt() {
-  const textoEncriptado = decryptButtonClicked(textArea.value);
-  message.value = textoEncriptado;
-  textArea.value = "";
-}
-
-// document.getElementById("output-section").addEventListener("click", function() {
-//   console.log('ok');
-// })
-
-async function btnCopy() {
-  const text = document.getElementById('output-area')
-  try {
-    navigator.clipboard.writeText(text.value)
-  } catch (error) {
-    console.log(error.message)
-  }
-}  
